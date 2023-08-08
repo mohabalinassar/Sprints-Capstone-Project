@@ -24,6 +24,8 @@ Before you begin, ensure you have the following prerequisites:
    terraform apply
 ### Step 2: Install Jenkins using Ansible
 Run the following Ansible playbook commands to install Jenkins, Docker, AWS CLI, and kubectl:
+
+```shell
 ansible-playbook docker.yml -i inventory.txt
 ansible-playbook Jenkins.yml -I inventory.txt
 ansible-playbook awscli.yml -i inventory.txt
